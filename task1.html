@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Finder</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .search-button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .search-button:hover {
+            background-color: #45a049;
+        }
+
+        .weather-info {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .weather-info .temperature {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Finder</h1>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Enter a city name...">
+        <button class="search-button">🔍 Search</button>
+    </div>
+
+    <div class="weather-info">
+        <p class="temperature">25°C</p>
+        <p class="condition">☀️ Sunny</p>
+    </div>
+
+    <footer>
+        Powered by <a href="#" target="_blank">Weather API</a>
+    </footer>
+</body>
+</html>
